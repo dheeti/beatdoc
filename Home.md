@@ -1,0 +1,1 @@
+This wiki will be used to document all Beat related stuff
