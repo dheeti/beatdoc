@@ -101,3 +101,18 @@ sudo touch authorized_keys
 sudo nano authorized_keys
 ```
 Paste contents of public key into this file & Save the file
+
+Step 6
+Change permissions of files
+
+```
+sudo chmod 700 /home/username/.ssh
+
+sudo chmod 600 /home/username/.ssh/authorized_keys
+
+sudo chown -R username:username /home/newusername/.ssh
+```
+
+Step 7
+
+Using your favourite SFTP client FileZill for example test & verify that you are able to transfer files
