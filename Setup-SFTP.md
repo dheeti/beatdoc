@@ -37,7 +37,9 @@ Match Group sftponly
         ChrootDirectory /home/%u
         ForceCommand internal-sftp
         X11Forwarding no
-        AllowTcpForwarding no
+        AllowTcpForwarding no 
+        PasswordAuthentication yes
+
 ```
 Restart SSH service to reflect these changes
 ```
