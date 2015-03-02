@@ -38,3 +38,43 @@ Restart SSH service to reflect these changes
 ```
 sudo service ssh restart
 ```
+
+Step 4 Creating and adding users to the sftp group
+
+4a. Create the group 'sftponly'
+
+```
+sudo groupadd sftponly
+```
+4b Create a new user 
+
+```
+useradd -m username
+```
+4c Add the new user to the sftponly group 
+
+```
+sudo usermod -g sftponly username
+```
+4d Remove the new users shell access
+
+```
+sudo usermod -s /bin/false username
+```
+4e Change the ownership/group of the users home directory to root:root
+
+```
+sudo chown root:root /home/username
+```
+4f Unless we change the users home directory to '/' or create '/home/username' inside the chroot they will be unable to login! i would suggest you opt for creating a the home directory inside the chroot as you can also make it writable for them.
+
+Create the 'fake' home directory 
+
+```
+sudo mkdir -p /home/username/home/username
+```
+4g Make the user the owner of their fake home directory
+
+```
+sudo chown username:username /home/username/home/username
+```
