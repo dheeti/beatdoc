@@ -54,7 +54,7 @@ sudo groupadd sftponly
 4b Create a new user 
 
 ```
-useradd -m username
+sudo useradd -m username
 ```
 4c Add the new user to the sftponly group 
 
