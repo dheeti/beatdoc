@@ -1,3 +1,8 @@
+Links for further reference
+
+[SSH Account Setup](https://rmtheis.wordpress.com/2011/07/03/setting-up-an-sftp-site-on-amazon-web-services-ec2-creating-an-account-to-share-with-a-third-party-and-restricting-that-account-to-allow-only-sftp/)
+[SFTP Setup](http://ubuntuforums.org/showthread.php?t=1057657)
+
 Step 1 
 Create Instance on EC2
 Step 2
