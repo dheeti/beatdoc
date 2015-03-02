@@ -78,3 +78,26 @@ sudo mkdir -p /home/username/home/username
 ```
 sudo chown username:username /home/username/home/username
 ```
+
+Step 5 Setup SSH access for this user
+
+5a On the server, create the .ssh directory for the new user
+
+```
+sudo mkdir /home/username/.ssh
+```
+5b Add public key to the server
+
+Retrieve public key
+
+```
+ssh-keygen -y
+```
+Create authorized_keys file
+
+```
+cd /home/username/.ssh
+sudo touch authorized_keys
+sudo nano authorized_keys
+```
+Paste contents of public key into this file & Save the file
