@@ -34,3 +34,7 @@ Match Group sftponly
         X11Forwarding no
         AllowTcpForwarding no
 ```
+Restart SSH service to reflect these changes
+```
+sudo service ssh restart
+```
