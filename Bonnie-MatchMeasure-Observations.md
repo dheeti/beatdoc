@@ -1,7 +1,8 @@
 Objective : Change patient so that it is trapped by measure CMS62V2
 
-Action : Create a patient
+Action : Create a patient 
 Impact : An entry is created in Record Collection
+[JSON](files/demo_test3_v0_created.json)
 
 Action : Check/Uncheck boxes for IPP/DENOM/Numer
 
