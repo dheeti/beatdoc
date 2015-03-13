@@ -1,4 +1,7 @@
-Checking & Unchecking Checkboxes for IPP, DENOM, Numer impacts values in records.expected_values collection
+Action : Check/Uncheck boxes for IPP/DENOM/Numer
+
+Impact : Respective fields set to 1 in expected_values collection
+
 
 Action : 
 Added "Encounter:Performed HIV Visit". No values were changed.
@@ -70,3 +73,74 @@ b. An entry is created under encounters collection with value
     ],
 
 '''
+
+Action : Added Diagnosis : Active HIV 
+
+Impact : 
+a. An entry is created in "source_data_criteria" collection
+
+        {
+            "negation" : false,
+            "definition" : "diagnosis",
+            "status" : "active",
+            "title" : "HIV",
+            "description" : "Diagnosis, Active: HIV",
+            "code_list_id" : "2.16.840.1.113883.3.464.1003.120.12.1003",
+            "type" : "conditions",
+            "id" : "DiagnosisActiveHiv",
+            "start_date" : NumberLong(1331625600000),
+            "end_date" : NumberLong(1331626500000),
+            "value" : [],
+            "references" : null,
+            "field_values" : {},
+            "hqmf_set_id" : "F70B2984-AF4A-4072-AE0D-CEC677A7FF8F",
+            "cms_id" : "CMS62v2",
+            "criteria_id" : "14c11766ee9SK",
+            "codes" : {
+                "SNOMED-CT" : [ 
+                    "111880001"
+                ],
+                "ICD-10-CM" : [ 
+                    "Z21"
+                ],
+                "ICD-9-CM" : [ 
+                    "V08"
+                ]
+            },
+            "negation_code_list_id" : "",
+            "coded_entry_id" : ObjectId("55026c2a6a61795bd3260000"),
+            "code_source" : "DEFAULT"
+        }, 
+
+b. A new field called as "conditions" is inserted with following values
+
+    "conditions" : [ 
+        {
+            "_id" : ObjectId("55026c2a6a61795bd3260000"),
+            "codes" : {
+                "SNOMED-CT" : [ 
+                    "111880001"
+                ],
+                "ICD-10-CM" : [ 
+                    "Z21"
+                ],
+                "ICD-9-CM" : [ 
+                    "V08"
+                ]
+            },
+            "mood_code" : "EVN",
+            "_type" : "Condition",
+            "description" : "Diagnosis, Active: HIV",
+            "start_time" : 1331625600,
+            "end_time" : 1331626500,
+            "status_code" : {
+                "SNOMED-CT" : [ 
+                    "55561003"
+                ],
+                "HL7 ActStatus" : [ 
+                    "active"
+                ]
+            },
+            "oid" : "2.16.840.1.113883.3.560.1.2"
+        }
+    ],
