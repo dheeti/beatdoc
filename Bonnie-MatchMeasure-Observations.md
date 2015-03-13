@@ -8,8 +8,6 @@ Added "Encounter:Performed HIV Visit". No values were changed.
 Impact : 
 a.An entry is created in source_data_criteria collection with following values
 
-'''
-
     "source_data_criteria" : [         
      {
             "negation" : false,
@@ -41,11 +39,8 @@ a.An entry is created in source_data_criteria collection with following values
             "code_source" : "DEFAULT"
         }, 
 
-'''
 
 b. An entry is created under encounters collection with value 
-
-'''
 
     "encounters" : [ 
         {
@@ -72,7 +67,6 @@ b. An entry is created under encounters collection with value
         }
     ],
 
-'''
 
 Action : Added Diagnosis : Active HIV 
 
