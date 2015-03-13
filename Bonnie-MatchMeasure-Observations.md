@@ -6,7 +6,7 @@ Impact : An entry is created in Record Collection
 
 Action : Check/Uncheck boxes for IPP/DENOM/Numer
 Impact : Respective fields set to 1 in expected_values collection
-[JSON](../blob/master/files/demo_test3_v1_IPPChecked.json)
+[JSON](https://github.com/dheeti/beatdoc/blob/master/files/demo_test3_v1_IPPChecked.json)
 
 Action : 
 Added "Encounter:Performed HIV Visit". No values were changed.
@@ -44,7 +44,6 @@ a.An entry is created in source_data_criteria collection with following values
             "code_source" : "DEFAULT"
         }, 
 
-
 b. An entry is created under encounters collection with value 
 
     "encounters" : [ 
@@ -72,9 +71,9 @@ b. An entry is created under encounters collection with value
         }
     ],
 
+[JSON](https://github.com/dheeti/beatdoc/blob/master/files/demo_test3_v2_AddEncounterPerformed.json)
 
 Action : Added Diagnosis : Active HIV 
-
 Impact : 
 a. An entry is created in "source_data_criteria" collection
 
@@ -144,6 +143,8 @@ b. A new field called as "conditions" is inserted with following values
         }
     ],
 
+[JSON][https://github.com/dheeti/beatdoc/blob/master/files/demo_test3_v3_AddDiagnosisActiveHIV.json]
+
 Action : Addded Encounter Performed : HIV Visit. This encounter was performed 90 days after 1st Encounter
 
 Impact : New Entry created in collection "source_data_criteria" with following values
@@ -177,5 +178,7 @@ Impact : New Entry created in collection "source_data_criteria" with following v
             "coded_entry_id" : ObjectId("55026eb86a61795bd33e0000"),
             "code_source" : "DEFAULT"
         }, 
+
+[JSON]([https://github.com/dheeti/beatdoc/blob/master/files/demo_test3_v4_AddEncounterPerformed90DaysLater.json)
 
 Now all Measure Conditions are GREEN
