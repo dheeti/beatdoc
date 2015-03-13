@@ -10,4 +10,4 @@ qme/quality_report.rb
 
 Mapping between oids & templates 
 
-bonnie/lib/assets/hqmf_template_oid_map.json
+hds/util/hqmf_template_oid_map.json
