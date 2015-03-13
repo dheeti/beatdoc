@@ -1,0 +1,74 @@
+{
+    "_id" : ObjectId("5502676f6a61795bd3150000"),
+    "languages" : [],
+    "measure_ids" : [ 
+        "F70B2984-AF4A-4072-AE0D-CEC677A7FF8F", 
+        null
+    ],
+    "first" : "test3",
+    "last" : "demo",
+    "gender" : "M",
+    "expired" : null,
+    "birthdate" : 315561600,
+    "description" : null,
+    "description_category" : null,
+    "deathdate" : null,
+    "notes" : "",
+    "is_shared" : null,
+    "ethnicity" : {
+        "code" : "2186-5",
+        "name" : "Not Hispanic or Latino",
+        "codeSystem" : "CDC Race"
+    },
+    "race" : {
+        "code" : "1002-5",
+        "name" : "American Indian or Alaska Native",
+        "codeSystem" : "CDC Race"
+    },
+    "source_data_criteria" : [ 
+        {
+            "id" : "MeasurePeriod",
+            "start_date" : 0,
+            "end_date" : 0,
+            "references" : null
+        }
+    ],
+    "expected_values" : [ 
+        {
+            "measure_id" : "F70B2984-AF4A-4072-AE0D-CEC677A7FF8F",
+            "population_index" : 0,
+            "IPP" : 1,
+            "DENOM" : 1,
+            "NUMER" : 1
+        }
+    ],
+    "user_id" : ObjectId("54e6b9e46a61795ad7000000"),
+    "bundle_id" : ObjectId("54e6b9e46a61795ad7010000"),
+    "medical_record_number" : "b4263c24307563429aee8f98ecd502d9",
+    "updated_at" : ISODate("2015-03-13T04:30:07.363Z"),
+    "created_at" : ISODate("2015-03-13T04:28:31.119Z"),
+    "insurance_providers" : [ 
+        {
+            "_id" : ObjectId("550267cf6a61795bd3180000"),
+            "codes" : {
+                "SOP" : [ 
+                    "349"
+                ]
+            },
+            "mood_code" : "EVN",
+            "_type" : "InsuranceProvider",
+            "type" : "OT",
+            "member_id" : "1234567890",
+            "name" : "Other",
+            "financial_responsibility_type" : {
+                "code" : "SELF",
+                "codeSystem" : "HL7 Relationship Code"
+            },
+            "start_time" : 1199125800,
+            "payer" : {
+                "_id" : ObjectId("550267cf6a61795bd3190000"),
+                "name" : "Other"
+            }
+        }
+    ]
+}
