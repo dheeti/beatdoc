@@ -143,7 +143,7 @@ b. A new field called as "conditions" is inserted with following values
         }
     ],
 
-[JSON][https://github.com/dheeti/beatdoc/blob/master/files/demo_test3_v3_AddDiagnosisActiveHIV.json]
+[JSON](https://github.com/dheeti/beatdoc/blob/master/files/demo_test3_v3_AddDiagnosisActiveHIV.json)
 
 Action : Addded Encounter Performed : HIV Visit. This encounter was performed 90 days after 1st Encounter
 
