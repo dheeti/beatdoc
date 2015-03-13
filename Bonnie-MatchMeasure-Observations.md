@@ -5,9 +5,8 @@ Impact : An entry is created in Record Collection
 [JSON](https://github.com/dheeti/beatdoc/blob/master/files/demo_test3_v0_created.json)
 
 Action : Check/Uncheck boxes for IPP/DENOM/Numer
-
 Impact : Respective fields set to 1 in expected_values collection
-
+[JSON](../blob/master/files/demo_test3_v1_IPPChecked.json)
 
 Action : 
 Added "Encounter:Performed HIV Visit". No values were changed.
