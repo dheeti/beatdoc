@@ -6,7 +6,8 @@ Impact :
 a.An entry is created in source_data_criteria collection with following values
 
 '''
-        
+
+"source_data_criteria" : [         
 {
             "negation" : false,
             "definition" : "encounter",
