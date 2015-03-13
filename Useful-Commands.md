@@ -7,3 +7,18 @@ Reset Mirth Admin Password in Derby DB
 
 *connect 'jdbc:derby:/home/jayram/apps/mirthconnect/appdata/mirthdb';*
 *update person_password set password='YzKZIAnbQ5m+3llggrZvNtf5fg69yX7pAplfYg0Dngn/fESH93OktQ==' WHERE person_id=1;*
+
+Import Bundle
+```
+rake bundle:import[/home/jayram/beat/bundle-latest-0220.zip,false,false,*,false,true] RAILS_ENV=development
+```
+
+Import Patients
+```
+rake import:patients[/home/jayram/beat/bundledata/patients/ep/json/,true]
+```
+
+Run Measure Job
+```
+rake jobs:work
+```
