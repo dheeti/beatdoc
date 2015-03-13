@@ -1,3 +1,8 @@
+Objective : Change patient so that it is trapped by measure CMS62V2
+
+Action : Create a patient
+Impact : An entry is created in Record Collection
+
 Action : Check/Uncheck boxes for IPP/DENOM/Numer
 
 Impact : Respective fields set to 1 in expected_values collection
@@ -138,3 +143,39 @@ b. A new field called as "conditions" is inserted with following values
             "oid" : "2.16.840.1.113883.3.560.1.2"
         }
     ],
+
+Action : Addded Encounter Performed : HIV Visit. This encounter was performed 90 days after 1st Encounter
+
+Impact : New Entry created in collection "source_data_criteria" with following values
+
+        {
+            "negation" : false,
+            "definition" : "encounter",
+            "status" : "performed",
+            "title" : "HIV Visit",
+            "description" : "Encounter, Performed: HIV Visit",
+            "code_list_id" : "2.16.840.1.113883.3.464.1003.101.12.1047",
+            "type" : "encounters",
+            "id" : "EncounterPerformedHivVisit",
+            "start_date" : NumberLong(1355904000000),
+            "end_date" : NumberLong(1356682500000),
+            "value" : [],
+            "references" : null,
+            "field_values" : {},
+            "hqmf_set_id" : "F70B2984-AF4A-4072-AE0D-CEC677A7FF8F",
+            "cms_id" : "CMS62v2",
+            "criteria_id" : "14c118027843G",
+            "codes" : {
+                "CPT" : [ 
+                    "99392"
+                ],
+                "SNOMED-CT" : [ 
+                    "12843005"
+                ]
+            },
+            "negation_code_list_id" : "",
+            "coded_entry_id" : ObjectId("55026eb86a61795bd33e0000"),
+            "code_source" : "DEFAULT"
+        }, 
+
+Now all Measure Conditions are GREEN
