@@ -4,7 +4,6 @@ Action :
 Added "Encounter:Performed HIV Visit". No values were changed.
 Impact : 
 a.An entry is created in source_data_criteria collection with following values
-
 '''
 
 "source_data_criteria" : [         
@@ -37,7 +36,6 @@ a.An entry is created in source_data_criteria collection with following values
             "coded_entry_id" : ObjectId("550269786a61795bd31e0000"),
             "code_source" : "DEFAULT"
         }, 
-
 '''
 
 b. An entry is created under encounters collection with value 
