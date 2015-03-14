@@ -22,3 +22,16 @@ Run Measure Job
 ```
 rake jobs:work
 ```
+
+Cleanup mongodb before importing bundles
+
+```
+db.system.js.remove();
+
+db.getCollectionNames().forEach(function(c){
+    if( (c != 'system.indexes') && (c != 'users') &&(c != 'system.js')){
+    print(c)
+    db.getCollection(c).drop();    
+    }
+})
+```
