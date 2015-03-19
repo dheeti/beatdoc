@@ -41,3 +41,7 @@ Export Mongo Objects in json format
 ```
 mongoexport --db bonnie_development --collection draft_measures --jsonArray --out /home/jayram/beat/testdata/patientjson.json
 ```
+
+Make AWS based Mongodb accessible throug port 27017
+
+- Make sure you have commented out bind_ip from the mongodb.conf
