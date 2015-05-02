@@ -45,3 +45,8 @@ mongoexport --db bonnie_development --collection draft_measures --jsonArray --ou
 Make AWS based Mongodb accessible throug port 27017
 
 - Make sure you have commented out bind_ip from the mongodb.conf
+
+Chef command to install popHealth on AWS Instance
+```
+bundle exec knife solo bootstrap 52.11.106.36 --ssh-user ubuntu --identity-file /home/jayram/beat/keys/testPop.pem -r role[popHealth]
+```
