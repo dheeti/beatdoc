@@ -50,3 +50,8 @@ Chef command to install popHealth on AWS Instance
 ```
 bundle exec knife solo bootstrap 52.11.106.36 --ssh-user ubuntu --identity-file /home/jayram/beat/keys/testPop.pem -r role[popHealth]
 ```
+
+Command to format XML files in Batch
+```
+for i in *.xml; do xmllint --format "$i" > pretty_"$i"; done
+```
